@@ -10,10 +10,10 @@ class G
 #define CS const static
 
 public:
-    CS int LEFT_MOTOR_PIN = 6;           // Motor A enable pin
+    CS int LEFT_MOTOR_PIN = 10;           // Motor A enable pin
     CS int RIGHT_MOTOR_PIN = 11;          // Motor B enable pin
-    CS int RIGHT_WHEEL_FORWARD_PIN = 10;   // Motor B In1 pin
-    CS int RIGHT_WHEEL_BACKWARD_PIN = 9; // Motor B In2 pin
+    CS int RIGHT_WHEEL_FORWARD_PIN = 9;   // Motor B In1 pin
+    CS int RIGHT_WHEEL_BACKWARD_PIN = 12; // Motor B In2 pin
     CS int LEFT_WHEEL_FORWARD_PIN = 7;    // Motor A In1 pin
     CS int LEFT_WHEEL_BACKWARD_PIN = 8;   // Motor A In2 pin
     CS int TRIGGER_PIN = 2;
