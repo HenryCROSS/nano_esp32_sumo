@@ -2,10 +2,6 @@
 #include <hardware_abstraction_layer.hpp>
 #include <application.hpp>
 
-static void search_action()
-{
-}
-
 static void do_action(action_t action)
 {
     static action_t old_action = action_t::INIT;
@@ -118,7 +114,7 @@ static action_t evaluation(tri_qtr_t tri_qtr, double ultra_dist)
     }
     else
     {
-        if (ultra_dist < 5.0)
+        if (ultra_dist < 5.0 && ultra_dist > 0)
         {
             action = action_t::ATTACK_FORWARD_TOO_CLOSE;
         }
